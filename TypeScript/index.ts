@@ -16,9 +16,9 @@ console.log(car);
 //   return sortedArr;
 // }
 
-function sortedArrayUsingHashTable(numbers: Array<number>): Array<number> {
-  const hashTable: { [key: number]: boolean } = {};
-  const sortedArr: number[] = [];
+function sortedArrayUsingHashTable(numbers) {
+  const hashTable = {};
+  const sortedArr = [];
   for (let i = 0; i < numbers.length; i++) {
     if (!hashTable[numbers[i]]) {
       hashTable[numbers[i]] = true;
