@@ -21,3 +21,10 @@ const objectArray: { name: string; age: number }[] = getArray([
   { name: "Bob", age: 25 },
 ]);
 console.log(numberArray, stringArray, booleanArray, mixedArray, objectArray);
+
+// multiple type variable
+function getInfo<T, U>(id: T, name: U): void {
+  console.log(`ID: ${id}, Name: ${name}`);
+}
+
+const user1 = getInfo<number, string>(1, "Alice");

@@ -17,3 +17,8 @@ var objectArray = getArray([
     { name: "Bob", age: 25 },
 ]);
 console.log(numberArray, stringArray, booleanArray, mixedArray, objectArray);
+// multiple type variable
+function getInfo(id, name) {
+    console.log("ID: ".concat(id, ", Name: ").concat(name));
+}
+var user1 = getInfo(1, "Alice");
