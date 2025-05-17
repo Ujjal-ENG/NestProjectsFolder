@@ -6,15 +6,15 @@ class Car {
 
 const car = new Car("Hello, TypeScript!");
 console.log(car);
-// function sortedArray(numbers: Array<number>): Array<number> {
-//   const sortedArr: number[] = [];
-//   for (let i = 0; i < numbers.length; i++) {
-//     if (numbers[i] !== numbers[i + 1]) {
-//       sortedArr.push(numbers[i]);
-//     }
-//   }
-//   return sortedArr;
-// }
+function sortedArray(numbers: Array<number>): Array<number> {
+  const sortedArr: number[] = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] !== numbers[i + 1]) {
+      sortedArr.push(numbers[i]);
+    }
+  }
+  return sortedArr;
+}
 
 function sortedArrayUsingHashTable(numbers) {
   const hashTable = {};
