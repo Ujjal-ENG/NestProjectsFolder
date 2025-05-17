@@ -22,3 +22,15 @@ function getInfo(id, name) {
     console.log("ID: ".concat(id, ", Name: ").concat(name));
 }
 var user1 = getInfo(1, "Alice");
+var Customer = /** @class */ (function () {
+    function Customer(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    return Customer;
+}());
+function getCustomerInfo(customer) {
+    console.log("Customer: ".concat(customer.firstName, " ").concat(customer.lastName));
+}
+var customer1 = new Customer("John", "Doe");
+getCustomerInfo(customer1);

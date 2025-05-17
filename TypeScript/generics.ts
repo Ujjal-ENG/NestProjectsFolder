@@ -28,3 +28,20 @@ function getInfo<T, U>(id: T, name: U): void {
 }
 
 const user1 = getInfo<number, string>(1, "Alice");
+
+class Customer {
+  firstName: string;
+  lastName: string;
+
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
+
+function getCustomerInfo<T extends Customer>(customer: T): void {
+  console.log(`Customer: ${customer.firstName} ${customer.lastName}`);
+}
+
+const customer1 = new Customer("John", "Doe");
+getCustomerInfo(customer1);
